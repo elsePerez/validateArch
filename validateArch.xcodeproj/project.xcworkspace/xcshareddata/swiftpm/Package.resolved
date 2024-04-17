@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "natds-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/natura-cosmeticos/natds-ios",
+      "state" : {
+        "revision" : "fe3867a9195711fe23de3bdba4781e391e6016fd",
+        "version" : "8.0.5"
+      }
+    }
+  ],
+  "version" : 2
+}
