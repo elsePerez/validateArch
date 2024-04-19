@@ -36,8 +36,10 @@ class CartViewModel: ObservableObject {
     }
     
     @Published var items: [CartItem] = []
+    @Published var itemsCount: Int = 0
     
     func addItem(item: CartItem) {
+        itemsCount += 1
         self.items.append(item)
     }
     
@@ -47,14 +49,6 @@ class CartViewModel: ObservableObject {
     
     func removeAll() {
         self.items.removeAll()
-    }
-    
-    func getItems() -> [CartItem] {
-        return self.items
-    }
-    
-    func getItemsCount() -> Int {
-        return self.items.count
     }
     
     func getItem(index: Int) -> CartItem {

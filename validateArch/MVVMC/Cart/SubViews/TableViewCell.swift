@@ -41,8 +41,8 @@ class CartItemCell: NatListItemCell {
     }()
     
     private func setupConstraints() {
-        self.addSubview(title)
-        self.addSubview(price)
+        self.contentView.addSubview(title)
+        self.contentView.addSubview(price)
         
         NSLayoutConstraint.activate([
             title.topAnchor.constraint(equalTo: self.topAnchor, constant: 8),

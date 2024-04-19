@@ -30,6 +30,7 @@ class CartViewController: UIViewController {
         setupButtons()
         setupTableView()
         registerCell()
+        linkCombine()
     }
     
     override func loadView() {
@@ -37,8 +38,18 @@ class CartViewController: UIViewController {
     }
     
     func linkCombine() {
+        
+        viewModel.$itemsCount
+            .sink { [weak self] count in
+                self?.mainView.countLabel.text = "Número de itens no carrinho \(count)"
+                if count > 0 {
+                    self?.mainView.panel.expand()
+                }
+            }
+            .store(in: &viewModel.cancellables)
+        
         viewModel.$items
-            .sink { [weak self] _ in
+            .sink { [weak self] items in
                 self?.mainView.tableView.reloadData()
             }
             .store(in: &viewModel.cancellables)
@@ -54,8 +65,7 @@ class CartViewController: UIViewController {
     }
     
     func registerCell() {
-        let nib = UINib(nibName: "listItem", bundle: nil)
-        mainView.tableView.register(nib, forCellReuseIdentifier: "listItem")
+        mainView.tableView.register(CartItemCell.self, forCellReuseIdentifier: "listItem")
     }
     
     @objc func addItem() {
@@ -75,8 +85,12 @@ extension CartViewController: UITableViewDelegate {
 
 extension CartViewController: UITableViewDataSource {
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.getItemsCount()
+        return viewModel.itemsCount
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
