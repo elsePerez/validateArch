@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		698AD1CC2BD2E68B005D974D /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698AD1CB2BD2E68B005D974D /* CartView.swift */; };
+		698AD1CE2BD2E6DC005D974D /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698AD1CD2BD2E6DC005D974D /* CartViewController.swift */; };
+		698AD1D02BD2E6E8005D974D /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698AD1CF2BD2E6E8005D974D /* CartViewModel.swift */; };
+		698AD1D32BD2E6FD005D974D /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698AD1D22BD2E6FD005D974D /* MainCoordinator.swift */; };
+		698AD1D62BD2EB0C005D974D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698AD1D52BD2EB0C005D974D /* TableViewCell.swift */; };
 		69CF69782BD02FAC00583A9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CF69772BD02FAC00583A9E /* AppDelegate.swift */; };
 		69CF697A2BD02FAC00583A9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CF69792BD02FAC00583A9E /* SceneDelegate.swift */; };
 		69CF697C2BD02FAC00583A9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CF697B2BD02FAC00583A9E /* ViewController.swift */; };
@@ -44,6 +49,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		698AD1CB2BD2E68B005D974D /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		698AD1CD2BD2E6DC005D974D /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		698AD1CF2BD2E6E8005D974D /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
+		698AD1D22BD2E6FD005D974D /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		698AD1D52BD2EB0C005D974D /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		69CF69742BD02FAC00583A9E /* validateArch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = validateArch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69CF69772BD02FAC00583A9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69CF69792BD02FAC00583A9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +102,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		698AD1C92BD2E66E005D974D /* MVVMC */ = {
+			isa = PBXGroup;
+			children = (
+				698AD1D12BD2E6EC005D974D /* Coordinator */,
+				698AD1CA2BD2E67D005D974D /* Cart */,
+			);
+			path = MVVMC;
+			sourceTree = "<group>";
+		};
+		698AD1CA2BD2E67D005D974D /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				698AD1D42BD2EAE8005D974D /* SubViews */,
+				698AD1CB2BD2E68B005D974D /* CartView.swift */,
+				698AD1CD2BD2E6DC005D974D /* CartViewController.swift */,
+				698AD1CF2BD2E6E8005D974D /* CartViewModel.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		698AD1D12BD2E6EC005D974D /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				698AD1D22BD2E6FD005D974D /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		698AD1D42BD2EAE8005D974D /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				698AD1D52BD2EB0C005D974D /* TableViewCell.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
 		69CF696B2BD02FAC00583A9E = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +161,7 @@
 		69CF69762BD02FAC00583A9E /* validateArch */ = {
 			isa = PBXGroup;
 			children = (
+				698AD1C92BD2E66E005D974D /* MVVMC */,
 				69CF69772BD02FAC00583A9E /* AppDelegate.swift */,
 				69CF69792BD02FAC00583A9E /* SceneDelegate.swift */,
 				69CF697B2BD02FAC00583A9E /* ViewController.swift */,
@@ -295,15 +342,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				69CF697C2BD02FAC00583A9E /* ViewController.swift in Sources */,
+				698AD1D62BD2EB0C005D974D /* TableViewCell.swift in Sources */,
 				69CF69B42BD0313300583A9E /* ViperEntity.swift in Sources */,
+				698AD1D02BD2E6E8005D974D /* CartViewModel.swift in Sources */,
 				69CF69822BD02FAC00583A9E /* validateArch.xcdatamodeld in Sources */,
 				69CF69B02BD0310800583A9E /* ViperInteractor.swift in Sources */,
 				69CF69B22BD0312A00583A9E /* ViperFactory.swift in Sources */,
 				69CF69AC2BD030F000583A9E /* ViperViewController.swift in Sources */,
+				698AD1CE2BD2E6DC005D974D /* CartViewController.swift in Sources */,
+				698AD1CC2BD2E68B005D974D /* CartView.swift in Sources */,
 				69CF69B82BD0314F00583A9E /* ViperView.swift in Sources */,
 				69CF69AE2BD030FB00583A9E /* ViperPresenter.swift in Sources */,
 				69CF69B62BD0314300583A9E /* ViperRouter.swift in Sources */,
 				69CF69782BD02FAC00583A9E /* AppDelegate.swift in Sources */,
+				698AD1D32BD2E6FD005D974D /* MainCoordinator.swift in Sources */,
 				69CF697A2BD02FAC00583A9E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
