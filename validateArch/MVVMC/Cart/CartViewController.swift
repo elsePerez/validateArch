@@ -56,7 +56,11 @@ class CartViewController: UIViewController {
     }
     
     func setupButtons() {
-        mainView.addButton.addTarget(self, action: #selector(addItem), for: .touchUpInside)
+//        mainView.addButton.addTarget(self, action: #selector(addItem), for: .touchUpInside)
+        
+        mainView.addButton.configure(delegate: self) { _ in
+            self.addItem()
+        }
     }
     
     func setupTableView() {
@@ -68,7 +72,7 @@ class CartViewController: UIViewController {
         mainView.tableView.register(CartItemCell.self, forCellReuseIdentifier: "listItem")
     }
     
-    @objc func addItem() {
+    func addItem() {
         let item = CartItem(name: "Item", price: 100)
         viewModel.addItem(item: item)
     }

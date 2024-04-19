@@ -1,0 +1,16 @@
+PODS:
+  - NatDSIcons (1.11.3)
+
+DEPENDENCIES:
+  - NatDSIcons
+
+SPEC REPOS:
+  trunk:
+    - NatDSIcons
+
+SPEC CHECKSUMS:
+  NatDSIcons: bfa5b4be58856ead836acc1ffbbf0361ec29039f
+
+PODFILE CHECKSUM: ae2e3deb38b461902a1602f8325768d24b8ac93e
+
+COCOAPODS: 1.15.2

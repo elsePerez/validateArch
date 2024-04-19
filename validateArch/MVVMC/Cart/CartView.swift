@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import NatDS
+import NatDSIcons
 
 class CartView: UIView {
     
@@ -50,10 +51,19 @@ class CartView: UIView {
         return textField
     }()
     
-    lazy var addButton: NatButton = {
-        let button = NatButton(style: .contained, size: .medium, theme: .consultoriaDeBelezaLight, color: .primary)
+//    lazy var addButton: NatButton = {
+//        let button = NatButton(style: .contained, size: .medium, theme: .consultoriaDeBelezaLight, color: .primary)
+//        button.translatesAutoresizingMaskIntoConstraints = false
+//        button.configure(title: "Add Item")
+//        return button
+//    }()
+    
+    lazy var addButton: NatIconButton = {
+        let button = NatIconButton(style: .standardDefault)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.configure(title: "Add Item")
+        button.configure(icon: NatDSIcons.getIcon(.filledActionAdd))
+        button.configure(state: .enabled)
+        button.configure(background: .float)
         return button
     }()
     
@@ -112,7 +122,6 @@ class CartView: UIView {
             itemTextField.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
             
             addButton.topAnchor.constraint(equalTo: itemTextField.bottomAnchor, constant: 32),
-            addButton.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
             
             panel.topAnchor.constraint(equalTo: addButton.bottomAnchor, constant: 32),
             panel.widthAnchor.constraint(equalTo: scrollView.widthAnchor),

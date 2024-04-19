@@ -1,0 +1,6 @@
+framework module NatDSIcons {
+  umbrella header "NatDSIcons-umbrella.h"
+
+  export *
+  module * { export * }
+}

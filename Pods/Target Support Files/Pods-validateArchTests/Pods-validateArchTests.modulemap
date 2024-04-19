@@ -1,0 +1,6 @@
+framework module Pods_validateArchTests {
+  umbrella header "Pods-validateArchTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
