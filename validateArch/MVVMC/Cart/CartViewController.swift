@@ -27,10 +27,10 @@ class CartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupButtons()
         setupTableView()
         registerCell()
         linkCombine()
+        setupForm()
     }
     
     override func loadView() {
@@ -55,8 +55,18 @@ class CartViewController: UIViewController {
             .store(in: &viewModel.cancellables)
     }
     
-    func setupButtons() {
-        mainView.addButton.addTarget(self, action: #selector(addItem), for: .touchUpInside)
+    func setupForm() {
+        let formVC = AddProductFormViewController(vm: viewModel.addProductFormViewModel)
+        self.mainView.formView.addSubview(formVC.view)
+        
+        formVC.view.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            formVC.view.leadingAnchor.constraint(equalTo: mainView.formView.leadingAnchor),
+            formVC.view.trailingAnchor.constraint(equalTo: mainView.formView.trailingAnchor),
+            formVC.view.topAnchor.constraint(equalTo: mainView.formView.topAnchor),
+            formVC.view.bottomAnchor.constraint(equalTo: mainView.formView.bottomAnchor)
+        ])
+        
     }
     
     func setupTableView() {
@@ -66,11 +76,6 @@ class CartViewController: UIViewController {
     
     func registerCell() {
         mainView.tableView.register(CartItemCell.self, forCellReuseIdentifier: "listItem")
-    }
-    
-    @objc func addItem() {
-        let item = CartItem(name: "Item", price: 100)
-        viewModel.addItem(item: item)
     }
     
 }

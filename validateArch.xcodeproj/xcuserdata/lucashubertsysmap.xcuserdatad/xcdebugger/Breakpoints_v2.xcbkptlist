@@ -3,4 +3,354 @@
    uuid = "10E06D1A-7B84-46D9-97D0-B44D5BFFD0F2"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9431F93D-EAF3-4731-B18D-3B55324A98E4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "validateArch/MVVMC/Cart/CartViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "init(coordinator:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "667C5D33-E6A8-4E61-8B40-C2B377AF12D4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "validateArch/MVVMC/Cart/Components/AddProductForm/AddProductFormViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "addItem(item:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "667C5D33-E6A8-4E61-8B40-C2B377AF12D4 - 11d2202f16c71f1d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for validateArch.AddProductFormViewModel.addItem(item: validateArch.AddCartItemForm) async -&gt; ()"
+                  moduleName = "validateArch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lucashubertsysmap/Development/validateArch/validateArch/MVVMC/Cart/Components/AddProductForm/AddProductFormViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "667C5D33-E6A8-4E61-8B40-C2B377AF12D4 - f7cfefab30467aa1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "validateArch.AddProductFormViewModel.addItem(item: validateArch.AddCartItemForm) async -&gt; ()"
+                  moduleName = "validateArch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lucashubertsysmap/Development/validateArch/validateArch/MVVMC/Cart/Components/AddProductForm/AddProductFormViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "667C5D33-E6A8-4E61-8B40-C2B377AF12D4 - 11d2202f16c71ef2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for validateArch.AddProductFormViewModel.addItem(item: validateArch.AddCartItemForm) async -&gt; ()"
+                  moduleName = "validateArch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lucashubertsysmap/Development/validateArch/validateArch/MVVMC/Cart/Components/AddProductForm/AddProductFormViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3DABD0A7-405A-4C74-8D92-1BC89C1C3C0A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "validateArch/MVVMC/Cart/Components/AddProductForm/AddProductFormViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "addProduct()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3DABD0A7-405A-4C74-8D92-1BC89C1C3C0A - 19265416c4815fc4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for validateArch.AddProductFormViewController.addProduct() async -&gt; ()"
+                  moduleName = "validateArch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lucashubertsysmap/Development/validateArch/validateArch/MVVMC/Cart/Components/AddProductForm/AddProductFormViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "3DABD0A7-405A-4C74-8D92-1BC89C1C3C0A - cae1c2e2ffea93ca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for validateArch.AddProductFormViewController.addProduct() async -&gt; ()"
+                  moduleName = "validateArch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lucashubertsysmap/Development/validateArch/validateArch/MVVMC/Cart/Components/AddProductForm/AddProductFormViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "3DABD0A7-405A-4C74-8D92-1BC89C1C3C0A - 7103c100100f0825"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for validateArch.AddProductFormViewController.addProduct() async -&gt; ()"
+                  moduleName = "validateArch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lucashubertsysmap/Development/validateArch/validateArch/MVVMC/Cart/Components/AddProductForm/AddProductFormViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "3DABD0A7-405A-4C74-8D92-1BC89C1C3C0A - 19265416c4815fc4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for validateArch.AddProductFormViewController.addProduct() async -&gt; ()"
+                  moduleName = "validateArch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lucashubertsysmap/Development/validateArch/validateArch/MVVMC/Cart/Components/AddProductForm/AddProductFormViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "28F5B2C9-4FB0-4902-953D-A4D074C4DE15"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "validateArch/MVVMC/Cart/Components/AddProductForm/AddProductFormViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "setupButtons()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FF5C2D5D-D4A5-491C-B27C-0629F0EFB2D6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "validateArch/MVVMC/Cart/Components/AddProductForm/AddProductFormViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "addItem(item:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FF5C2D5D-D4A5-491C-B27C-0629F0EFB2D6 - 11d2202f16c71f1d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for validateArch.AddProductFormViewModel.addItem(item: validateArch.AddCartItemForm) async -&gt; ()"
+                  moduleName = "validateArch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lucashubertsysmap/Development/validateArch/validateArch/MVVMC/Cart/Components/AddProductForm/AddProductFormViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "FF5C2D5D-D4A5-491C-B27C-0629F0EFB2D6 - 11d2202f16c71f1d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for validateArch.AddProductFormViewModel.addItem(item: validateArch.AddCartItemForm) async -&gt; ()"
+                  moduleName = "validateArch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lucashubertsysmap/Development/validateArch/validateArch/MVVMC/Cart/Components/AddProductForm/AddProductFormViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "96">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3C44EF85-5F17-4E79-9145-AAC9CA28EA93"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "validateArch/MVVMC/Cart/Components/AddProductForm/AddProductFormViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "validate()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3C44EF85-5F17-4E79-9145-AAC9CA28EA93 - a04fade0ac5891c9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "validateArch.AddProductFormViewModel.validate() -&gt; ()"
+                  moduleName = "validateArch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lucashubertsysmap/Development/validateArch/validateArch/MVVMC/Cart/Components/AddProductForm/AddProductFormViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "912">
+               </Location>
+               <Location
+                  uuid = "3C44EF85-5F17-4E79-9145-AAC9CA28EA93 - a04fade0ac5891c9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "validateArch.AddProductFormViewModel.validate() -&gt; ()"
+                  moduleName = "validateArch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lucashubertsysmap/Development/validateArch/validateArch/MVVMC/Cart/Components/AddProductForm/AddProductFormViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B973B3F5-AAB3-41DB-831C-8B2FA238D488"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "validateArch/MVVMC/Cart/Components/AddProductForm/AddProductFormViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "addProduct()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B973B3F5-AAB3-41DB-831C-8B2FA238D488 - 19265416c4815fc4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for validateArch.AddProductFormViewController.addProduct() async -&gt; ()"
+                  moduleName = "validateArch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lucashubertsysmap/Development/validateArch/validateArch/MVVMC/Cart/Components/AddProductForm/AddProductFormViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "B973B3F5-AAB3-41DB-831C-8B2FA238D488 - 3720f153ea992434"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "validateArch.AddProductFormViewController.addProduct() async -&gt; ()"
+                  moduleName = "validateArch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lucashubertsysmap/Development/validateArch/validateArch/MVVMC/Cart/Components/AddProductForm/AddProductFormViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "B973B3F5-AAB3-41DB-831C-8B2FA238D488 - cae1c2e2ffea922b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for validateArch.AddProductFormViewController.addProduct() async -&gt; ()"
+                  moduleName = "validateArch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lucashubertsysmap/Development/validateArch/validateArch/MVVMC/Cart/Components/AddProductForm/AddProductFormViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8BBA4026-B454-4FB1-B2FF-8C713F120C68"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "validateArch/MVVMC/Cart/Components/AddProductForm/AddProductFormViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "close()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

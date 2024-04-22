@@ -13,34 +13,31 @@ struct CartItem: Codable, Equatable {
     let price: Int
 }
 
-protocol CartViewModelProtocol {
-    func addItem(item: CartItem)
-    func removeItem(item: CartItem)
-    func removeAll()
-    func getItems() -> [CartItem]
-    func getItemsCount() -> Int
-    func getItem(index: Int) -> CartItem
-    func getItemTitle(index: Int) -> String
-    func getItemPrice(index: Int) -> String
-    func getTotal() -> Int
-}
-
 class CartViewModel: ObservableObject {
     
     let coordinator: MainCoordinator
+    
+    var addProductFormViewModel = AddProductFormViewModel()
     
     var cancellables = Set<AnyCancellable>()
     
     init(coordinator: MainCoordinator) {
         self.coordinator = coordinator
+        
+        addProductFormViewModel.$itemAdded
+            .sink { item in
+                guard let item = item else { return }
+                self.addItemFromForm(item: item)
+            }
+            .store(in: &cancellables)
     }
     
     @Published var items: [CartItem] = []
     @Published var itemsCount: Int = 0
     
-    func addItem(item: CartItem) {
+    func addItemFromForm(item: AddCartItemForm) {
         itemsCount += 1
-        self.items.append(item)
+        self.items.append(CartItem(name: item.code, price: 10))
     }
     
     func removeItem(item: CartItem) {

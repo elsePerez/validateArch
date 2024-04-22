@@ -43,18 +43,10 @@ class CartView: UIView {
         return label
     }()
     
-    lazy var itemTextField: NatField = {
-        let textField = NatField()
-        textField.translatesAutoresizingMaskIntoConstraints = false
-        textField.placeholder = "Item"
-        return textField
-    }()
-    
-    lazy var addButton: NatButton = {
-        let button = NatButton(style: .contained, size: .medium, theme: .consultoriaDeBelezaLight, color: .primary)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.configure(title: "Add Item")
-        return button
+    lazy var formView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
     }()
     
     lazy var panel: ExpansionPanel = {
@@ -74,8 +66,7 @@ class CartView: UIView {
         addSubview(scrollView)
         scrollView.addSubview(title)
         scrollView.addSubview(countLabel)
-        scrollView.addSubview(itemTextField)
-        scrollView.addSubview(addButton)
+        scrollView.addSubview(formView)
         scrollView.addSubview(panel)
         
         panel.setDetailView(tableView)
@@ -108,13 +99,11 @@ class CartView: UIView {
             countLabel.topAnchor.constraint(equalTo: title.bottomAnchor, constant: 32),
             countLabel.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
             
-            itemTextField.topAnchor.constraint(equalTo: countLabel.bottomAnchor, constant: 32),
-            itemTextField.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
+            formView.topAnchor.constraint(equalTo: countLabel.bottomAnchor, constant: 32),
+            formView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
+            formView.heightAnchor.constraint(greaterThanOrEqualToConstant: 100),
             
-            addButton.topAnchor.constraint(equalTo: itemTextField.bottomAnchor, constant: 32),
-            addButton.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
-            
-            panel.topAnchor.constraint(equalTo: addButton.bottomAnchor, constant: 32),
+            panel.topAnchor.constraint(equalTo: formView.bottomAnchor, constant: 32),
             panel.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
             
 //            tableView.widthAnchor.constraint(equalTo: panel.widthAnchor),

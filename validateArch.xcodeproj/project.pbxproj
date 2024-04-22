@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		696DE72E2BD34B280069FD39 /* AddProductFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696DE72D2BD34B280069FD39 /* AddProductFormView.swift */; };
+		696DE7302BD34B3E0069FD39 /* AddProductFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696DE72F2BD34B3E0069FD39 /* AddProductFormViewController.swift */; };
+		696DE7342BD34F770069FD39 /* CartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696DE7332BD34F770069FD39 /* CartModel.swift */; };
+		696DE7362BD3529D0069FD39 /* AddProductFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696DE7352BD3529D0069FD39 /* AddProductFormViewModel.swift */; };
+		696DE7382BD352B90069FD39 /* AddProductFormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696DE7372BD352B90069FD39 /* AddProductFormModel.swift */; };
 		698AD1CC2BD2E68B005D974D /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698AD1CB2BD2E68B005D974D /* CartView.swift */; };
 		698AD1CE2BD2E6DC005D974D /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698AD1CD2BD2E6DC005D974D /* CartViewController.swift */; };
 		698AD1D02BD2E6E8005D974D /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698AD1CF2BD2E6E8005D974D /* CartViewModel.swift */; };
@@ -49,6 +54,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		696DE72D2BD34B280069FD39 /* AddProductFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductFormView.swift; sourceTree = "<group>"; };
+		696DE72F2BD34B3E0069FD39 /* AddProductFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductFormViewController.swift; sourceTree = "<group>"; };
+		696DE7332BD34F770069FD39 /* CartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartModel.swift; sourceTree = "<group>"; };
+		696DE7352BD3529D0069FD39 /* AddProductFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductFormViewModel.swift; sourceTree = "<group>"; };
+		696DE7372BD352B90069FD39 /* AddProductFormModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductFormModel.swift; sourceTree = "<group>"; };
 		698AD1CB2BD2E68B005D974D /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		698AD1CD2BD2E6DC005D974D /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		698AD1CF2BD2E6E8005D974D /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
@@ -102,6 +112,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		696DE72B2BD349650069FD39 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				696DE72C2BD34AE00069FD39 /* AddProductForm */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		696DE72C2BD34AE00069FD39 /* AddProductForm */ = {
+			isa = PBXGroup;
+			children = (
+				696DE72D2BD34B280069FD39 /* AddProductFormView.swift */,
+				696DE72F2BD34B3E0069FD39 /* AddProductFormViewController.swift */,
+				696DE7352BD3529D0069FD39 /* AddProductFormViewModel.swift */,
+				696DE7372BD352B90069FD39 /* AddProductFormModel.swift */,
+			);
+			path = AddProductForm;
+			sourceTree = "<group>";
+		};
 		698AD1C92BD2E66E005D974D /* MVVMC */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,10 +143,12 @@
 		698AD1CA2BD2E67D005D974D /* Cart */ = {
 			isa = PBXGroup;
 			children = (
+				696DE72B2BD349650069FD39 /* Components */,
 				698AD1D42BD2EAE8005D974D /* SubViews */,
 				698AD1CB2BD2E68B005D974D /* CartView.swift */,
 				698AD1CD2BD2E6DC005D974D /* CartViewController.swift */,
 				698AD1CF2BD2E6E8005D974D /* CartViewModel.swift */,
+				696DE7332BD34F770069FD39 /* CartModel.swift */,
 			);
 			path = Cart;
 			sourceTree = "<group>";
@@ -349,9 +380,14 @@
 				69CF69B02BD0310800583A9E /* ViperInteractor.swift in Sources */,
 				69CF69B22BD0312A00583A9E /* ViperFactory.swift in Sources */,
 				69CF69AC2BD030F000583A9E /* ViperViewController.swift in Sources */,
+				696DE7302BD34B3E0069FD39 /* AddProductFormViewController.swift in Sources */,
+				696DE7342BD34F770069FD39 /* CartModel.swift in Sources */,
+				696DE72E2BD34B280069FD39 /* AddProductFormView.swift in Sources */,
 				698AD1CE2BD2E6DC005D974D /* CartViewController.swift in Sources */,
+				696DE7382BD352B90069FD39 /* AddProductFormModel.swift in Sources */,
 				698AD1CC2BD2E68B005D974D /* CartView.swift in Sources */,
 				69CF69B82BD0314F00583A9E /* ViperView.swift in Sources */,
+				696DE7362BD3529D0069FD39 /* AddProductFormViewModel.swift in Sources */,
 				69CF69AE2BD030FB00583A9E /* ViperPresenter.swift in Sources */,
 				69CF69B62BD0314300583A9E /* ViperRouter.swift in Sources */,
 				69CF69782BD02FAC00583A9E /* AppDelegate.swift in Sources */,
