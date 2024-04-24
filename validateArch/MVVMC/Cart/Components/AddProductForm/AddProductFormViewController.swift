@@ -56,11 +56,11 @@ class AddProductFormViewController: UIViewController {
     }
     
     func setupButtons() {
-        self.mainView.addProductButton.addTarget(self, action: #selector(close), for: .touchUpInside)
+        self.mainView.addProductButton.addTarget(self, action: #selector(addProduct), for: .touchUpInside)
     }
     
     @objc func close() {
-        printContent("some")
+        print("some")
     }
     
     @objc func addProduct() async {

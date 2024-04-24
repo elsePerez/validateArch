@@ -12,7 +12,7 @@ import NatDS
 class CartViewController: UIViewController {
     
     private lazy var mainView = CartView()
-    
+    private var addProductFormVC: AddProductFormViewController?
     private let viewModel: CartViewModel
     
     init(vm: CartViewModel) {
@@ -56,17 +56,21 @@ class CartViewController: UIViewController {
     }
     
     func setupForm() {
-        let formVC = AddProductFormViewController(vm: viewModel.addProductFormViewModel)
-        self.mainView.formView.addSubview(formVC.view)
-        
-        formVC.view.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            formVC.view.leadingAnchor.constraint(equalTo: mainView.formView.leadingAnchor),
-            formVC.view.trailingAnchor.constraint(equalTo: mainView.formView.trailingAnchor),
-            formVC.view.topAnchor.constraint(equalTo: mainView.formView.topAnchor),
-            formVC.view.bottomAnchor.constraint(equalTo: mainView.formView.bottomAnchor)
-        ])
-        
+        if addProductFormVC == nil {
+            addProductFormVC = AddProductFormViewController(vm: viewModel.addProductFormViewModel)
+        }
+
+        if let formVC = addProductFormVC {
+            self.mainView.formView.addSubview(formVC.view)
+
+            formVC.view.translatesAutoresizingMaskIntoConstraints = false
+            NSLayoutConstraint.activate([
+                formVC.view.leadingAnchor.constraint(equalTo: mainView.formView.leadingAnchor),
+                formVC.view.trailingAnchor.constraint(equalTo: mainView.formView.trailingAnchor),
+                formVC.view.topAnchor.constraint(equalTo: mainView.formView.topAnchor),
+                formVC.view.bottomAnchor.constraint(equalTo: mainView.formView.bottomAnchor)
+            ])
+        }
     }
     
     func setupTableView() {

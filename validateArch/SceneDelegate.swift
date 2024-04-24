@@ -19,11 +19,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         DesignSystem().configure(with: .consultoriaDeBelezaLight)
         
-        let navController = UINavigationController()
-        
-        coordinator = MainCoordinator(navigationController: navController)
-        
-        coordinator?.start()
+        let navController = UINavigationController(rootViewController: RealmViewController())
+
+//        coordinator = MainCoordinator(navigationController: navController)
+//        
+//        coordinator?.start()
         
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
